@@ -8,7 +8,9 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;
+
+400;500;600;700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -2394,7 +2396,23 @@ html {
 }
 
 .menu-btn {
-  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.menu-btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
 }
 
 .menu-btn span {
@@ -3209,6 +3227,12 @@ button {
   display: none;
 }
 
+@media (min-width: 947px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 @media (min-width: 1281px) {
   .nft-plan__text-block .defautl_p {
     font-size: 18px;
@@ -3350,17 +3374,6 @@ button {
 
   .card__image {
     display: none;
-  }
-}
-
-@media (max-width: 960px) {
-  .menu-btn {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
   }
 }
 
