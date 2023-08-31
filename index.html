@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DeGuardVPN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href='./css/style.css' />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/fovicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/fovicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/fovicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/icons/fovicon/site.webmanifest" />
+
+    <script src="./js/app.min.js" defer></script>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <div class="mobile-menu__header">
+            <div class="mobile-menu__wrapper">
+                <div class="mobile-menu__header-cnt">
+                    <img class="mobile-menu__logo" src="./img/header_logo.png" alt="Logo">
+                    <a href="https://app.deguard.io/" class="header__menu-button menu__button">
+                        Enter dApp
+                    </a>
+                    <div class="menu-btn">
+                        <img src="./img/mobile-menu-close.svg" alt="">
+                    </div>
+                </div>
+            </div>            
+        </div>        
+        <nav class="mobile-menu__menu">
+            <ul>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="#Introducing">Introducing</a>
+                </li>
+                <li>
+                    <a href="#Mechanics">Mechanics</a>
+                </li>
+            </ul>
+        </nav>             
+    </div>
+    
+    <section class="header" id="home">
+      <div class="header__navigation filter">
+        <div class="header__navigation-cnt">
+            <div class="header__navigation__row">
+                <a data-scroll href="#home">
+                    <img src="./img/header_logo.png" alt="" height="48" width="160"
+                        class="header__navigation__row__logo" />
+                </a>
+
+                <!-- DROP DOWN -->
+                <nav class="menu__menu menu">
+                    <ul class="menu__body">
+
+                        <li class="menu__item dropdown-about">
+                            <a href="" class="menu__links">About</a>
+
+                            <div class="dropdown">
+                                <div class="dropdown__wrapper">
+                                    <div class="dropdown__content filter">
+                                        <div class="dropdown__content__item">                                            
+                                            <a data-scroll href="#Introducing">Introducing</a>
+                                        </div>
+
+                                        <div class="dropdown__content__item">
+                                            <a data-scroll href="#Mechanics">Mechanics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="menu__item">
+                            <a data-scroll href="#HowItWorks" class="menu__links">How it works</a>
+                        </li>
+                        
+                        <li class="menu__item dropdown-community">
+                            <a href="#" class="menu__links">Community</a>                            
+                            
+                            <div class="dropdown">
+                                <div class="dropdown__wrapper_second">
+                                    <div class="dropdown__content_second">
+                                        
+                                        <div class="dropdown__content__item"> 
+                                            <a href="https://t.me/DeGuardVPN" target="_blank">
+                                                <span class="dropdown__content__item__circle"><img src="./img/icons/social_svg/tg.svg"></span>
+                                                <a href="https://t.me/DeGuardVPN" target="_blank">Telegram</a>                                    
+                                            </a>
+                                        </div>
+                                                                                                                        
+                                        <div class="dropdown__content__item"> 
+                                            <a href="https://discord.com/invite/agv3a9wGUn" target="_blank">
+                                                <span class="dropdown__content__item__circle"><img src="./img/icons/social_svg/ds.svg"></span>
+                                                <a href="https://discord.com/invite/agv3a9wGUn" target="_blank">Discord</a>
+                                            </a>
+                                        </div>
+                                        
+
+                                        <div class="dropdown__content__item"> 
+                                            <a href="https://twitter.com/DeGuardVPN" target="_blank">
+                                                <span class="dropdown__content__item__circle"><img src="./img/icons/social_svg/tw.svg"></span>
+                                                <a href="https://twitter.com/DeGuardVPN" target="_blank">Twitter</a>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="dropdown__content__item"> 
+                                            <a href="https://github.com/deguardvpn" target="_blank">
+                                                <span class="dropdown__content__item__circle"><img src="./img/icons/social_svg/git.svg"></span>
+                                                <a href="https://github.com/deguardvpn" target="_blank">Github</a>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="dropdown__content__item"> 
+                                            <a href="https://www.linkedin.com/company/deguard/" target="_blank">
+                                                <span class="dropdown__content__item__circle"><img src="./img/icons/social_svg/li.svg"></span>
+                                                <a href="https://www.linkedin.com/company/deguard/" target="_blank">LinkedIn</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- MAIN BUTTON -->
+                <a href="https://app.deguard.io/" class="header__menu-button menu__button">
+                    Enter dApp
+                </a>
+
+                <div class="menu-btn">
+                    <img src="./img/mobile-menu-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER CONTENT -->
+    <div class="header__content">        
+        <div class="header__content__elipse"></div>        
+        
+        <div class="header__content__container">
+            <div class="header__content__main">
+                <h1 class="heading">
+                    The world's first VPN<br>for web3 & DeFi community
+                </h1>               
+                <p>
+                    No fiat money, no personal information.<br />
+                    Just <span class="mark">connect your wallet</span> and <span class="mark">secure your connection</span>
+                </p>
+
+                <div class="header__cta">
+                    <a class="header__cta-btn menu__button" href="https://app.deguard.io/">
+                        Enter dApp
+                    </a>
+                    <div class="header__cta-stores">
+                        <a class="store-btn store-btn_soon">
+                            <img src="./img/appstore-badge.svg" alt="">
+                        </a>
+                        <a class="store-btn store-btn_soon">
+                            <img src="./img/google-play-badge.svg" alt="">
+                        </a>
+                    </div>                    
+                </div>
+                
+                <div class="header__supported">
+                    <picture>
+                        <source srcset="./img/mockups-image-2x.webp 2x, ./img/mockups-image.webp" type="image/webp">
+                        <source srcset="./img/mockups-image-2x.png 2x, ./img/mockups-image.png" type="image/png">                        
+                        <img class="header__phones-img" src="./img/mockups-image.png" alt="">
+                    </picture>
+                    <div class="header__supported-block">
+                        <img class="header__supported-badge" src="./img/supported-badge.svg" alt="">                    
+                        <div class="header__supported-cnt">
+                            <img class="header__supported-logo header__supported-logo_bnb" src="./img/icons/supported-logos/bnb.png" alt="">
+                            <img class="header__supported-logo" src="./img/icons/supported-logos/arbitrum.png" alt="">
+                            <img class="header__supported-logo" src="./img/icons/supported-logos/fantom.png" alt="">
+                            <img class="header__supported-logo" src="./img/icons/supported-logos/polygon.png" alt="">
+                            <img class="header__supported-logo header__supported-logo_soon" src="./img/icons/supported-logos/venom-soon.png" alt="">
+                        </div>
+                    </div>                    
+                </div>                                                                  
+            </div>
+        </div>        
+    </div>
+    </section>
+
+    <!-- INTRODUCING SECTION -->
+    <section class="introducing" id="Introducing">
+        <div class="wrapper">
+            <div class="introducing__content">
+                <div class="introducing__content__decor-circle">
+                    <div class="introducing__content__decor-circle box">
+                        <img class="img-fist-cercle_binance" src="./img/icons/fist-circle-icons/image 15.png"
+                            alt="" />
+                        <div class="introducing__content__decor-circle__big-circle">
+                            <img class="img-fist-cercle_meta" src="./img/icons/fist-circle-icons/image 10.png"
+                                srcset="" alt="" />
+                            <img class="img-fist-cercle_wg" src="./img/icons/fist-circle-icons/image 17.png"
+                                alt="" />
+                            <img class="img-fist-cercle_boat" src="./img/icons/fist-circle-icons/image 14.png"
+                                alt="" />
+                            <img class="img-fist-cercle_circle"
+                                src="./img/icons/fist-circle-icons/image 16.png" alt="" />
+                            <img class="img-fist-cercle_wawe" src="./img/icons/fist-circle-icons/image 12.png"
+                                alt="" />
+                            <div class="introducing__content__decor-circle__small-circle">
+                                <svg width="102" height="131" viewBox="0 0 102 131" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.9">
+                                        <path
+                                            d="M84.5442 15.3645C78.8074 13.8113 73.2025 11.7925 67.7843 9.32818C62.4537 6.98196 57.3081 4.22553 52.3925 1.08259L51 0.209473L49.6326 1.10855C44.7171 4.25105 39.5706 7.00757 34.2409 9.35379C28.8131 11.8108 23.2004 13.8208 17.4557 15.3645L15.5571 15.8525V37.2754C15.5571 71.6713 49.8097 84.5401 50.1388 84.6686L51 84.9768L51.8603 84.6686C52.2146 84.6686 86.4429 71.6964 86.4429 37.2754V15.8525L84.5442 15.3645Z"
+                                            fill="url(#paint0_linear_402_511)" />
+                                        <path
+                                            d="M84.5442 15.3645C78.8074 13.8113 73.2025 11.7925 67.7843 9.32818C62.4537 6.98196 57.3081 4.22553 52.3925 1.08259L51 0.209473L49.6326 1.10855C44.7171 4.25105 39.5706 7.00757 34.2409 9.35379C28.8131 11.8108 23.2004 13.8208 17.4557 15.3645L15.5571 15.8525V37.2754C15.5571 71.6713 49.8097 84.5401 50.1388 84.6686L51 84.9768L51.8603 84.6686C52.2146 84.6686 86.4429 71.6964 86.4429 37.2754V15.8525L84.5442 15.3645Z"
+                                            fill="white" />
+                                    </g>
+                                    <path
+                                        d="M75.0474 26.9692C83.4738 30.6754 92.1876 33.7166 101.105 36.0641V64.5409C101.105 88.4242 88.8816 104.91 76.3019 115.587C70.0068 120.927 63.6796 124.758 58.8942 127.249C56.5059 128.494 54.5169 129.396 53.1305 129.979C52.4898 130.248 51.9862 130.447 51.6372 130.577H51.6155L51.0035 130.789C49.5232 130.23 37.5816 125.551 25.7103 115.498C13.1236 104.839 0.895203 88.4007 0.895203 64.5409V36.065C9.82369 33.7314 18.5488 30.7032 26.9882 27.0083C35.32 23.4601 43.3636 19.2929 51.0504 14.543C58.7171 19.2764 66.7399 23.4306 75.0474 26.9692Z"
+                                        fill="black" />
+                                    <path
+                                        d="M75.0474 26.9692C83.4738 30.6754 92.1876 33.7166 101.105 36.0641V64.5409C101.105 88.4242 88.8816 104.91 76.3019 115.587C70.0068 120.927 63.6796 124.758 58.8942 127.249C56.5059 128.494 54.5169 129.396 53.1305 129.979C52.4898 130.248 51.9862 130.447 51.6372 130.577H51.6155L51.0035 130.789C49.5232 130.23 37.5816 125.551 25.7103 115.498C13.1236 104.839 0.895203 88.4007 0.895203 64.5409V36.065C9.82369 33.7314 18.5488 30.7032 26.9882 27.0083C35.32 23.4601 43.3636 19.2929 51.0504 14.543C58.7171 19.2764 66.7399 23.4306 75.0474 26.9692Z"
+                                        fill="url(#paint1_linear_402_511)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_402_511" x1="79.2232" y1="3.42021" x2="19.9057"
+                                            y2="86.2113" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFC700" />
+                                            <stop offset="1" stop-color="#E43086" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_402_511" x1="94.2234" y1="14.3846" x2="7.32165"
+                                            y2="139.769" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFC700" />
+                                            <stop offset="1" stop-color="#E43086" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="introducing__content__text">
+                    <div>
+                        <p class="p_shadow p_orange">INTRODUCING</p>
+                        <h2 class="introducing__content__text__h1 section-title">
+                            We upgraded <br />VPN to web3 <img class="emoji" src="./img/emoji/rocket.png" alt="">
+                        </h2>
+                    </div>
+                    <div class="intr_p">
+                        <h4 class="block-title orange-gradient">No registration required</h4>
+                        <p class="defautl_p mechp3">
+                            All interaction with the service takes place only
+                            through the web3 wallet. <b>No personal information is required</b>
+                        </p>
+                        <h4 class="block-title orange-gradient">
+                            Payment for services via web3 wallet
+                        </h4>
+                        <p class="defautl_p scroll mechp3">
+                            Because there is no need to use traditional payment details, <b>it is impossible to compromise your real identity</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="intro_elipse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MECHANICS SECTION -->
+    <section class="nft-plan" id="Mechanics">
+        <div class="wrapper">
+            <div class="nft-plan__cnt">            
+                <div class="intro_elipse" id="ntf-elipse"></div>
+                <div class="nft-plan__content">
+                    <div class="nft-plan__content__text">
+                        <div>
+                            <p class="p_shadow p_orange">MECHANICS</p>
+                            <h2 class="section-title">
+                                Get an NFT plan <img class="emoji" src="./img/emoji/struck.png" alt="">
+                            </h2>
+                        </div>                        
+    
+                        <div class="nft-plan__text-block">
+                            <div class="nft-plan__text-block-item">
+                                <h4 class="orange-gradient block-title">Utility NFT function</h4>
+                                <p class="defautl_p">
+                                    Ownership of&nbsp;DeGuard NFT confirms your rights to&nbsp;premium VPN services
+                                </p>
+                            </div>                            
+        
+                            <div class="nft-plan__text-block-item">
+                                <h4 class="orange-gradient block-title">Pay as much as you use</h4>
+                                <p class="defautl_p scroll-target">
+                                    You get a&nbsp;unique opportunity in&nbsp;the VPN market to&nbsp;dispose of&nbsp;your plan on&nbsp;market conditions. Sell your DeGuard NFT plan when you no&nbsp;longer need a&nbsp;VPN, need money or&nbsp;for any other reason
+                                </p>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card-anim">
+                        <img class="card-1" src="./img/icons/NFT-plan/card1.png" alt="" />
+                        <img class="card-2" src="./img/icons/NFT-plan/card2.png" alt="" />
+                        <img class="card-3" src="./img/icons/NFT-plan/card3.png" alt="" />
+                        <div class="card-anim-scroll">
+                            <div class="card-anim-scroll__btn-wrapper">
+                                <div class="card-anim-scroll__buy-btn">Buy</div>
+                                <div class="card-anim-scroll__sell-btn">Sell</div>
+                            </div>
+                            <div class="iphone13"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- PAUMENTS SECTION -->
+    <section class="payment" id="Payments">
+        <div class="wrapper">
+            <div class="payment__content">
+                <div class="intro_elipse" id="ntf-elipse"></div>
+                <div class="payment__content__decor-circle">
+                    <div class="payment__content__decor-circle box">
+                        <div class="payment__content__decor-circle__big-circle">
+                            <div class="payment__content__decor-circle__small-circle">
+                                <img class="spinner" src="./img/icons/PaySection/spinner.png" alt="" />
+                                <!-- FIRST -->
+                                <div class="payment__group-usd">
+                                    <img class="payment__group-usd__item"
+                                        src="./img/icons/PaySection/usd_group/usdt.svg" alt="USDT">
+                                    <img class="payment__group-usd__item"
+                                        src="./img/icons/PaySection/usd_group/weth.svg" alt="USDT">
+                                    <img class="payment__group-usd__item"
+                                        src="./img/icons/PaySection/usd_group/dai.svg" alt="USDT">
+                                    <img class="payment__group-usd__item"
+                                        src="./img/icons/PaySection/usd_group/dog.svg" alt="USDT">
+                                    <img class="payment__group-usd__item"
+                                        src="./img/icons/PaySection/usd_group/wrap.svg" alt="USDT">
+
+                                </div>
+                                <!-- SECOND -->
+                                <div class="payment__group">
+                                    <img class="payment__group__item avax"
+                                        src="./img/icons/PaySection/circle/Avax.svg" alt="USDT">
+                                    <img class="payment__group__item bnb"
+                                        src="./img/icons/PaySection/circle/BNB.svg" alt="USDT">
+                                    <img class="payment__group__item eth"
+                                        src="./img/icons/PaySection/circle/ETH.svg" alt="USDT"> -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment__content__text">
+                    <div>
+                        <p class="p_shadow p_orange">PAYMENTS</p>
+                        <h2 class="section-title">
+                            The cross-chain magic is&nbsp;already here <img class="emoji" src="./img/emoji/flash.png" alt="">
+                        </h2>                    
+                    </div>                    
+                    <div>
+                        <h4 class="orange-gradient block-title">Cross-chain NFT Bridge</h4>
+                        <p class="defautl_p payment-scroll-target">
+                            Thanks to the integration of&nbsp;the Asterizm protocol, you can freely transfer your plan to&nbsp;your desired network
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works" id="HowItWorks">
+        <div class="wrapper">
+
+            <div class="how-it-works__content" id="Devices">
+                <!-- FIST BLOCK -->
+                <div class="how-it-works__content__first-card card">
+                    <div class="how-it-works__content__first-card__wrapper">
+                        <p class="p_shadow p_orange">HOW IT WORKS</p>
+                        <h2 class="section-title section-title_small">
+                            Just 3 steps to get max privacy
+                        </h2>
+
+                        <div class="first-card__list">
+                            <div class="first-card__list__item">
+                                <div class="first-card__list__item__circle">1</div>
+                                <p>
+                                    Connect your
+                                    <span class="p_orange">web3 wallet</span>
+                                </p>
+                            </div>
+                            <div class="first-card__list__item desctop">
+                                <div class="first-card__list__item__circle">2</div>
+                                <p>
+                                    <span class="p_orange">Buy an NFT plan </span>
+                                    in DeGuard dApp or on third-party marketplaces
+                                </p>
+                            </div>                         
+
+                            <div class="first-card__list__item desctop">
+                                <div class="first-card__list__item__circle">3</div>
+                                <p>
+                                    <span class="p_orange">Download VPN config</span>
+                                    or scan QR-code in Wireguard app
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a class="menu__button how-it-work-btn" href="https://app.deguard.io/" target="_blank">Try it</a>                           
+                        </div>
+                    </div>
+                    <img class="card__image" src="./img/privacy-image.svg" style="opacity: .15;" alt="" />
+                </div>
+                
+                <!-- SECOND BLOCK -->
+                <div class="how-it-works__content__first-card card">                    
+                    <div class="card__wrapper card__wrapper_card-2 card__wrapper_centered">
+                        <p class="p_shadow p_orange">DEVICES</p>
+                        <h2 class="section-title section-title_small">
+                            Protect all your devices via
+                            <span class="wire-guard">
+                                <img src="./img/wire-guard-logo.svg" alt="">
+                                WireGuard
+                            </span>
+                        </h2>
+                        <div class="first-card__list__item first-card__list__item_protect">
+                            <p>You can use the generated VPN configurations on all popular platforms.</p>
+                            <p>Download WireGuard App for</p>
+                        </div>
+                        <div class="platform">
+                            <a href="https://www.wireguard.com/install/" class="platform__item" target="_blank">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.298 5.94043H6.59998V15.638H16.298V5.94043Z" fill="#0078D4" />
+                                    <path d="M27.06 5.94043H17.362V15.638H27.06V5.94043Z" fill="#0078D4" />
+                                    <path d="M16.298 16.7031H6.59998V26.4007H16.298V16.7031Z" fill="#0078D4" />
+                                    <path d="M27.06 16.7031H17.362V26.4007H27.06V16.7031Z" fill="#0078D4" />
+                                </svg>
+                                <p>Windows</p>
+                            </a>
+
+                            <a href="https://www.wireguard.com/install/" class="platform__item" target="_blank">
+                                <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.461 8.77244C19.3246 8.87788 16.9168 10.2298 16.9168 13.2359C16.9168 16.7129 19.9806 17.9429 20.0723 17.9734C20.0582 18.0484 19.5856 19.658 18.457 21.2981C17.4506 22.7414 16.3995 24.1824 14.8006 24.1824C13.2017 24.1824 12.7902 23.2569 10.9444 23.2569C9.14561 23.2569 8.50605 24.2128 7.04351 24.2128C5.58097 24.2128 4.56048 22.8773 3.38716 21.2372C2.02807 19.3113 0.929993 16.3192 0.929993 13.4795C0.929993 8.92474 3.9021 6.50911 6.82718 6.50911C8.38143 6.50911 9.67702 7.52597 10.6528 7.52597C11.5816 7.52597 13.03 6.44819 14.7983 6.44819C15.4684 6.44819 17.8762 6.50911 19.461 8.77244ZM13.9588 4.5199C14.6901 3.65533 15.2074 2.45572 15.2074 1.2561C15.2074 1.08975 15.1933 0.92105 15.1627 0.785156C13.9729 0.829673 12.5574 1.57475 11.7039 2.56115C11.0337 3.32028 10.4083 4.5199 10.4083 5.73592C10.4083 5.91867 10.4389 6.10142 10.453 6.16C10.5282 6.17406 10.6505 6.19046 10.7727 6.19046C11.8403 6.19046 13.1829 5.47819 13.9588 4.5199Z"
+                                        fill="white" />
+                                </svg>
+                                <p>MacOS</p>
+                            </a>
+
+                            <a href="https://www.wireguard.com/install/" class="platform__item" target="_blank">
+                                <img src="./img/icons/linux.svg" alt="">
+                                <p>Linux</p>
+                            </a>
+
+                            <a href="https://apps.apple.com/us/app/wireguard/id1441195209" class="platform__item" target="_blank">
+                                <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_357_1397)">
+                                        <path
+                                            d="M19.461 8.77244C19.3246 8.87788 16.9168 10.2298 16.9168 13.2359C16.9168 16.7129 19.9806 17.9429 20.0723 17.9734C20.0582 18.0484 19.5856 19.658 18.457 21.2981C17.4506 22.7414 16.3995 24.1824 14.8006 24.1824C13.2017 24.1824 12.7902 23.2569 10.9444 23.2569C9.14561 23.2569 8.50605 24.2128 7.04351 24.2128C5.58097 24.2128 4.56048 22.8773 3.38716 21.2372C2.02807 19.3113 0.929993 16.3192 0.929993 13.4795C0.929993 8.92474 3.9021 6.50911 6.82718 6.50911C8.38143 6.50911 9.67702 7.52597 10.6528 7.52597C11.5816 7.52597 13.03 6.44819 14.7983 6.44819C15.4684 6.44819 17.8762 6.50911 19.461 8.77244ZM13.9588 4.5199C14.6901 3.65533 15.2074 2.45572 15.2074 1.2561C15.2074 1.08975 15.1933 0.92105 15.1627 0.785156C13.9729 0.829673 12.5574 1.57475 11.7039 2.56115C11.0338 3.32028 10.4083 4.5199 10.4083 5.73592C10.4083 5.91867 10.4389 6.10142 10.453 6.16C10.5282 6.17406 10.6505 6.19046 10.7727 6.19046C11.8403 6.19046 13.1829 5.47819 13.9588 4.5199Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_357_1397">
+                                            <rect width="19.14" height="23.43" fill="white"
+                                                transform="translate(0.929993 0.785156)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <p>IOS</p>
+                            </a>
+
+                            <a href="https://play.google.com/store/apps/details?id=com.wireguard.android&hl=en_US" class="platform__item" target="_blank">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_357_1467)">
+                                        <path
+                                            d="M9.375 19.271C9.375 19.5864 9.24989 19.8889 9.02719 20.1119C8.80449 20.3349 8.50244 20.4602 8.1875 20.4602C7.87256 20.4602 7.57051 20.3349 7.34781 20.1119C7.12511 19.8889 7 19.5864 7 19.271V13.9197C7 13.6043 7.12511 13.3018 7.34781 13.0788C7.57051 12.8558 7.87256 12.7305 8.1875 12.7305C8.50244 12.7305 8.80449 12.8558 9.02719 13.0788C9.24989 13.3018 9.375 13.6043 9.375 13.9197V19.271ZM26 19.271C26 19.5864 25.8749 19.8889 25.6522 20.1119C25.4295 20.3349 25.1274 20.4602 24.8125 20.4602C24.4976 20.4602 24.1955 20.3349 23.9728 20.1119C23.7501 19.8889 23.625 19.5864 23.625 19.271V13.9197C23.625 13.6043 23.7501 13.3018 23.9728 13.0788C24.1955 12.8558 24.4976 12.7305 24.8125 12.7305C25.1274 12.7305 25.4295 12.8558 25.6522 13.0788C25.8749 13.3018 26 13.6043 26 13.9197V19.271ZM15.3125 25.811C15.3125 26.1263 15.1874 26.4288 14.9647 26.6518C14.742 26.8749 14.4399 27.0001 14.125 27.0001C13.8101 27.0001 13.508 26.8749 13.2853 26.6518C13.0626 26.4288 12.9375 26.1263 12.9375 25.811V20.4596C12.9375 20.1442 13.0626 19.8417 13.2853 19.6187C13.508 19.3957 13.8101 19.2704 14.125 19.2704C14.4399 19.2704 14.742 19.3957 14.9647 19.6187C15.1874 19.8417 15.3125 20.1442 15.3125 20.4596V25.811ZM20.0625 25.811C20.0625 26.1263 19.9374 26.4288 19.7147 26.6518C19.492 26.8749 19.1899 27.0001 18.875 27.0001C18.5601 27.0001 18.258 26.8749 18.0353 26.6518C17.8126 26.4288 17.6875 26.1263 17.6875 25.811V20.4596C17.6875 20.1442 17.8126 19.8417 18.0353 19.6187C18.258 19.3957 18.5601 19.2704 18.875 19.2704C19.1899 19.2704 19.492 19.3957 19.7147 19.6187C19.9374 19.8417 20.0625 20.1442 20.0625 20.4596V25.811Z"
+                                            fill="#7CB342" />
+                                        <path
+                                            d="M10.5625 12.7307V21.649C10.5625 21.9644 10.6876 22.2669 10.9103 22.4899C11.133 22.7129 11.4351 22.8382 11.75 22.8382H21.25C21.5649 22.8382 21.867 22.7129 22.0897 22.4899C22.3124 22.2669 22.4375 21.9644 22.4375 21.649V12.7307H10.5625ZM16.5 6.78418C12.9375 6.78418 10.7673 8.95148 10.5625 11.5409H22.4375C22.2321 8.95148 20.0625 6.78418 16.5 6.78418ZM14.125 10.1127C13.9675 10.1127 13.8165 10.0501 13.7052 9.93857C13.5938 9.82706 13.5312 9.67582 13.5312 9.51813C13.5312 9.36043 13.5938 9.20919 13.7052 9.09768C13.8165 8.98618 13.9675 8.92353 14.125 8.92353C14.2825 8.92353 14.4335 8.98618 14.5448 9.09768C14.6562 9.20919 14.7188 9.36043 14.7188 9.51813C14.7188 9.67582 14.6562 9.82706 14.5448 9.93857C14.4335 10.0501 14.2825 10.1127 14.125 10.1127ZM18.875 10.1127C18.7175 10.1127 18.5665 10.0501 18.4552 9.93857C18.3438 9.82706 18.2812 9.67582 18.2812 9.51813C18.2812 9.36043 18.3438 9.20919 18.4552 9.09768C18.5665 8.98618 18.7175 8.92353 18.875 8.92353C19.0325 8.92353 19.1835 8.98618 19.2948 9.09768C19.4062 9.20919 19.4688 9.36043 19.4688 9.51813C19.4688 9.67582 19.4062 9.82706 19.2948 9.93857C19.1835 10.0501 19.0325 10.1127 18.875 10.1127Z"
+                                            fill="#7CB342" />
+                                        <path d="M20.0625 6.18945L19.0733 7.67534M12.9375 6.18945L13.729 7.4274"
+                                            stroke="#7CB342" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_357_1467">
+                                            <rect width="19" height="22" fill="white" transform="translate(7 5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <p>Android</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <picture>
+                        <source srcset="./img/devices-2x.png 2x, ./img/devices.png" type="image/png">
+                        <img class="card__image" src="./img/devices.png" alt="">
+                    </picture>                    
+                </div>
+                
+                <!-- THIRD BLOCK -->
+                <div class="how-it-works__content__first-card card" id="third-card">
+                    <div class="how-it-works__content__first-card__wrapper3">
+                        <p class="p_shadow p_orange">SOCIAL MEDIA</p>
+                        <h2 class="section-title section-title_small">Join our community</h2>
+                        <p class="defautl_p mb55">
+                            Find like-minded people, get advice or take part in bonus programs. <br>
+                            <span class="p_orange"> We are waiting for you! </span>
+                        </p>
+                    </div>
+
+                    <div class="networks__cards">
+                        <div class="networks__cards__item">
+                            <div class="networks__cards__item__icon"></div>                            
+                            <a href="https://twitter.com/DeGuardVPN" target="_blank">
+                                <div class="network__button">
+                                    <p>Join X</p>
+
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.25 1.5C14.25 0.947716 13.8023 0.5 13.25 0.5L4.25 0.500001C3.69771 0.500001 3.25 0.947716 3.25 1.5C3.25 2.05229 3.69771 2.5 4.25 2.5L12.25 2.5L12.25 10.5C12.25 11.0523 12.6977 11.5 13.25 11.5C13.8023 11.5 14.25 11.0523 14.25 10.5L14.25 1.5ZM1.95711 14.2071L13.9571 2.20711L12.5429 0.792894L0.542893 12.7929L1.95711 14.2071Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="networks__cards__item">
+                            <div class="networks__cards__item__icon"></div>                            
+                            <a href="https://discord.gg/agv3a9wGUn" target="_blank">
+                                <div class="network__button">
+                                    <p>Join Discord</p>
+
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.25 1.5C14.25 0.947716 13.8023 0.5 13.25 0.5L4.25 0.500001C3.69771 0.500001 3.25 0.947716 3.25 1.5C3.25 2.05229 3.69771 2.5 4.25 2.5L12.25 2.5L12.25 10.5C12.25 11.0523 12.6977 11.5 13.25 11.5C13.8023 11.5 14.25 11.0523 14.25 10.5L14.25 1.5ZM1.95711 14.2071L13.9571 2.20711L12.5429 0.792894L0.542893 12.7929L1.95711 14.2071Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="networks__cards__item" target="_blank">
+                            <div class="networks__cards__item__icon"></div>                            
+                            <a href="https://t.me/DeGuardVPN" target="_blank">
+                                <div class="network__button">
+                                    <p>Join Telegram</p>
+
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.25 1.5C14.25 0.947716 13.8023 0.5 13.25 0.5L4.25 0.500001C3.69771 0.500001 3.25 0.947716 3.25 1.5C3.25 2.05229 3.69771 2.5 4.25 2.5L12.25 2.5L12.25 10.5C12.25 11.0523 12.6977 11.5 13.25 11.5C13.8023 11.5 14.25 11.0523 14.25 10.5L14.25 1.5ZM1.95711 14.2071L13.9571 2.20711L12.5429 0.792894L0.542893 12.7929L1.95711 14.2071Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="networks__cards__item">
+                            <div class="networks__cards__item__icon"></div>                            
+                            <a href="https://github.com/deguardvpn" target="_blank">
+                                <div class="network__button">
+                                    <p>Join our Github</p>
+
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.25 1.5C14.25 0.947716 13.8023 0.5 13.25 0.5L4.25 0.500001C3.69771 0.500001 3.25 0.947716 3.25 1.5C3.25 2.05229 3.69771 2.5 4.25 2.5L12.25 2.5L12.25 10.5C12.25 11.0523 12.6977 11.5 13.25 11.5C13.8023 11.5 14.25 11.0523 14.25 10.5L14.25 1.5ZM1.95711 14.2071L13.9571 2.20711L12.5429 0.792894L0.542893 12.7929L1.95711 14.2071Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="wrapper">                        
+
+            <!-- CONTENT SECTION -->
+            <div class="footer__content">
+                <!-- LEFT BLOCK -->
+                <div class="footer__content__left-block">
+                    <a data-scroll href="#home">
+                        <img src="./img/header_logo.png" alt="" height="48" width="160"
+                            class="footer__logo" />
+                    </a>
+                    <p class="footer-p">The world's first VPN for web3 <br> & DeFi community</p>
+
+                <p class=" footer-r">© 2023 DeGuard. All rights reserved</p>
+                </div>
+
+                <!-- RIGTH BLOCK -->
+                <div class="footer__content__rigth-block">
+                    <!-- FIRST COLUMN -->
+                    <div class="footer__content__rigth-block__item">
+                        <a data-scroll href="#home" class="p_shadow p_orange fmb24">HOME</a>
+                        <div class="footer__content__rigth-block__item__list">
+                            <a data-scroll href="#Introducing"
+                                class="footer__content__rigth-block__item__list__p">Introducing</a>
+                            <a data-scroll href="#Mechanics"
+                                class="footer__content__rigth-block__item__list__p">Mechanics</a>
+                            <a data-scroll href="#Payments"
+                                class="footer__content__rigth-block__item__list__p">Payments</a>
+                            <a data-scroll href="#HowItWorks" class="footer__content__rigth-block__item__list__p">How it
+                                works</a>
+                            <a data-scroll href="#Devices"
+                                class="footer__content__rigth-block__item__list__p">Devices</a>
+                        </div>
+                    </div>
+
+                    <!-- SECOND COLUMN -->
+                    <div class="footer__content__rigth-block__item">
+                        <p class="p_shadow p_orange fmb24">COMMUNITY</p>
+
+                        <div class="footer__content__rigth-block__item__list">
+                            <a href="https://www.figma.com/file/5VmgZUgUeomVAFILJqck1i/DeGuard-Media-Kit?type=design&node-id=0%3A1&mode=design&t=WAmEWziloxxfjDrk-1" target="_blank" class="footer__content__rigth-block__item__list__p">Media kit</a>
+
+                            <a href="https://twitter.com/DeGuardVPN" target="_blank" class="footer__content__rigth-block__item__list__p">Twitter</a>
+
+                            <a href="https://discord.gg/agv3a9wGUn" target="_blank" class="footer__content__rigth-block__item__list__p">Discord</a>
+                            
+                            <a href="https://t.me/DeGuardVPN" target="_blank" class="footer__content__rigth-block__item__list__p">Telegram</a>
+                            <a href="https://github.com/deguardvpn" target="_blank"
+                                class="footer__content__rigth-block__item__list__p">Github</a>
+                            <a href="https://www.linkedin.com/company/deguard/" target="_blank"
+                                class="footer__content__rigth-block__item__list__p">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <!-- THIRD COLUMN -->
+                    <div class="footer__content__rigth-block__item">
+                        <p class="p_shadow p_orange fmb24">LEGAL</p>
+                        <div class="footer__content__rigth-block__item__list">
+                            <div class="soon_div_item">
+                                <span class="soon_div">Soon</span>
+                                <a class="footer__content__rigth-block__item__list__p">Cookie Policy</a>
+                            </div>
+                            <div class="soon_div_item">
+                                <span class="soon_div">Soon</span>
+                                <a class="footer__content__rigth-block__item__list__p">Terms of Use</a>
+                            </div>
+                            <div class="soon_div_item">
+                                <span class="soon_div">Soon</span>
+                                <a class="footer__content__rigth-block__item__list__p">Privacy Policy</a>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- <div class="footer__content__elipse"></div> -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- <div class="add_place"></div> -->
+
+<script src="/static/deguardapp/smooth-scroll.min.js"></script>
+
+<script>
+    let meta = document.querySelector('.img-fist-cercle_meta')
+    let wg = document.querySelector('.img-fist-cercle_wg')
+    let boat = document.querySelector('.img-fist-cercle_boat')
+    let circle = document.querySelector('.img-fist-cercle_circle')
+    let wawe = document.querySelector('.img-fist-cercle_wawe')
+    let binance = document.querySelector('.img-fist-cercle_binance')
+
+    function onEntry(entry) {
+        entry.forEach((change) => {
+            if (change.isIntersecting) {
+                meta.classList.add('meta')
+                wg.classList.add('wg')
+                boat.classList.add('boat')
+                circle.classList.add('circle')
+                wawe.classList.add('wawe')
+                binance.classList.add('binance')
+            }
+        })
+    }
+
+    let options = {
+        threshold: [0.5],
+    }
+
+    let observer = new IntersectionObserver(onEntry, options)
+    let elements = document.querySelectorAll('.scroll')
+
+    for (let elm of elements) {
+        observer.observe(elm)
+    }
+</script>
+
+<script>
+    let card1 = document.querySelector('.card-1')
+    let card2 = document.querySelector('.card-2')
+    let circle2 = document.querySelector('.card-anim-scroll')
+    let iphone = document.querySelector('.iphone13')
+
+    function onEntry(entry) {
+        entry.forEach((change) => {
+            if (change.isIntersecting) {
+                card1.classList.add('card-1-a')
+                card2.classList.add('card-2-a')
+                iphone.classList.add('iphone13-a')
+                circle2.style.opacity = '1'
+            }
+        })
+    }
+
+    let a = {
+        threshold: [0.5],
+    }
+
+    let b = new IntersectionObserver(onEntry, a)
+    let e = document.querySelectorAll('.scroll-target')
+
+    for (let elm of e) {
+        b.observe(elm)
+    }
+
+    console.log('hellow2')
+</script>
+
+<script>
+    let spinner = document.querySelector('.spinner')
+    let usd = document.querySelector('.payment__group-usd')
+    let avax = document.querySelector('.avax')
+    let bnb = document.querySelector('.bnb')
+    let eth = document.querySelector('.eth')
+
+    function onEntry(entry) {
+        entry.forEach((change) => {
+            if (change.isIntersecting) {
+                spinner.classList.add('spinner-active')
+                usd.classList.add('usd-active')
+                avax.classList.add('avax-active')
+                bnb.classList.add('bnb-active')
+                eth.classList.add('eth-active')
+                // iphone.classList.add('iphone13-a')
+                // circle2.style.opacity = '1'
+            }
+        })
+    }
+
+    let a1 = {
+        threshold: [0.5],
+    }
+
+    let b1 = new IntersectionObserver(onEntry, a1)
+    let e1 = document.querySelectorAll('.payment-scroll-target')
+
+    for (let elm of e1) {
+        b1.observe(elm)
+    }
+
+    console.log('hellow2')
+
+
+</script>
+<script>
+
+    let con1 = document.querySelector('.con1')
+    let con2 = document.querySelector('.con2')
+    let deconn = document.querySelector('.deconn')
+    let deconnLine = document.querySelector('.deconn-line')
+
+    let deconnConnection = document.querySelector('.deconn-connection')
+
+    let deconn2 = document.querySelector('.deconn2')
+    let deconnLine2 = document.querySelector('.deconn-line2')
+    let deconnConnection2 = document.querySelector('.deconn-connection2')
+
+    function onEntry(entry) {
+        entry.forEach((change) => {
+            if (change.isIntersecting) {
+                setTimeout(function () {
+                    con1.classList.add('con1-avtive')
+                }, 1500)
+
+                setTimeout(function () {
+                    con2.classList.add('con2-avtive')
+                }, 900)
+
+                setTimeout(function () {
+                    deconn.classList.add('deconn-active')
+                    deconnLine.classList.add('deconn-line-active')
+                    deconnConnection.classList.add('deconn-connection-active')
+                }, 500)
+
+
+                // setTimeout(function(){
+                //     deconn.classList.add('deconn-active')
+                //     deconnLine.classList.add('deconn-line-active')
+                //     deconnConnection.classList.add('deconn-connection-active')
+                // }, 500)
+
+                setTimeout(function () {
+                    deconn2.classList.add('deconn2-active')
+                    deconnLine2.classList.add('deconn-line2-active')
+                    deconnConnection2.classList.add('deconn-connection2-active')
+                }, 1000)
+
+                // con2.classList.add('con1-avtive')
+                // iphone.classList.add('iphone13-a')
+                // circle2.style.opacity = '1'
+            }
+        })
+    }
+
+    let a2 = {
+        threshold: [0.5],
+    }
+
+    let b2 = new IntersectionObserver(onEntry, a2)
+    let e2 = document.querySelectorAll('.header__content__main__color')
+
+    for (let elm of e2) {
+        b2.observe(elm)
+    }
+
+</script>
+
