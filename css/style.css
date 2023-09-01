@@ -8,9 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;
-
-400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -2108,6 +2106,7 @@ table {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
+  will-change: transform;
   -webkit-transition: -webkit-transform 0.6s;
   transition: -webkit-transform 0.6s;
   -o-transition: transform 0.6s;
@@ -2426,6 +2425,7 @@ html {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #c5c5c5;
+  will-change: transform;
   -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
